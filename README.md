@@ -1,19 +1,31 @@
-# Accio Code Tutorials: AngularJS#
+Grunt
+-----
 
-***Updated: 11-13-14***
+Grunt has become an essential tool for demanding projects. Look through the Gruntfile.coffee for ideas for your own project.
 
-This tutorial series for [AccioCode](https://www.youtube.com/user/CDPAdvertising "Accio Code on YouTube") will show how to use the basics of AngularJS. You will learn how to make a simple web page and a simple web application.
+Bower
+-----
 
-## What is AngularJS ##
-AngularJS is an open-source framework in JavaScript. It was created and maintained by Google as an alternative to other JavaScript frameworks to make single-page applications easier.
+Bower has been something I've played around for a while. While its great at syncing down the latest resource packages such as bootstrap, fontawesome, it downloads the entire repository.It auto-inserts the css and script tags in the layout file. The bloated files bower downloads conflicts /w sails-linker. For those who prefers to manually update the css/js links, bower is still a very useful package manager for you.
 
-It is an MVC (Model-View-Controller) framework so a brief understanding of MVC is suggested, but not required, to use this tutorial.
+Git
+---
 
-## Directives Videos ##
-1. [Writing Our First Directive](http://youtu.be/QwaVgz-GSXY "Writing our First Directive")
-2. [Scope, Element and Attributes](http://youtu.be/utKtjxLako4 "Scope, Element and Attributes")
-3. [Directive Element Binding](http://youtu.be/7vgvBffpSbs "Directive Element Binding")
-4. [Directive to Directive Communication](http://youtu.be/aG8VD0KvUw4 "Directive to Directive Communication")
-5. [Directive Restrictions Explained](http://youtu.be/mkEJDWneiPg "Directive Restrictions Explained")
-6. [Isolate Scope Part 1](https://www.youtube.com/watch?v=-a4E2eRHHVY "Isolate Scope Part 1")
-7. [Isolate Scope Part 2](http://youtu.be/UMoDVY8HAVk "Isolate Scope Part 2")
+This is essential to any collaborative project for both version control and deployment.
+
+Notable highlights:
+- putting .gitkeep in any empty folders, otherwise git won't sync them. This is important for the cache folder that Volt requires
+- gitattributes Auto detect text files and perform LF normalization. This is important if you have both mac and window teammates working on the same project
+- do not sync sourcemap files
+
+Installation 
+------------
+
+- its already setup you just need to run some command to pull NPM dependancy 
+- download or clone to local workspace so that you can have .json file with you also install npm before starting .
+- just take alook on package.json and bower.json
+- run sudo npm install  (it will install node-modules)
+- Now after getting all Modules handy  just run grunt task 
+- grunt , grunt-dev , grunt-test 
+
+
